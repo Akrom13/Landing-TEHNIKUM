@@ -375,6 +375,53 @@ h2 {
     font-size: calc(1.9vw + 3px);
 }
 
+/*10.Классная работа 12урок*/
+.feedbackCard{
+    padding: 20px 50px;
+    background-color: #f0f7fd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feedbackCard img:nth-child(1){
+    margin-bottom: 12px;
+}
+.feedbackCard p{
+    font-size: 21px;
+}
+.feedbackUser{
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+.feedbackUser img{
+    border-radius: 50%;
+}
+.feedbackUser h3{
+    font-size: 21px;
+    font-weight: 400;
+    width: 170px;
+}
+
+/*13.Домашняя работа*/
+.textforsplide h2 {
+    width: calc(58.2vw + 109.6px);/*855-328*/
+    font-weight: 500;
+    font-size: calc(2.7vw + 24.5px);/*58-34*/
+    margin-bottom: 15px;
+}
+.textforsplide p {
+    width: calc(46.4vw + 154px);/*748-328*/
+    font-weight: 400;
+    font-size: calc(1vw + 14.2px);/*27-18*/
+    margin-bottom: 20px;
+}
+  
+  
+  
+  
+
 
 
 @media (max-width: 1280px) {
