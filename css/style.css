@@ -11,7 +11,7 @@
 
 /*1.Классная работа 7урок*/
 section{
-    padding: 0 calc(10.6vw - 15.8px) calc(11.1vw + 18.4px);
+    padding: 0 calc(10.6vw - 15.8px) calc(11.1vw + 18.4px);/*-*//*-*/
 }
 .bg{
     background-image: url(../img/html_css_js.png);
@@ -417,8 +417,97 @@ h2 {
     font-size: calc(1vw + 14.2px);/*27-18*/
     margin-bottom: 20px;
 }
+.student img {
+    width: calc(19.7vw + 254.2px);/*506-328*/
+    height: calc(19.7vw + 254.2px);/*506-328*/
+}
   
-  
+  /*14.Классная работа 13урок*/
+  footer {
+    padding: calc(2.2vw + 51.7px) calc(10.6vw - 15.8px);/*80-60*//*-*/
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerLeft {
+    width: 50%;
+}
+.footerLeft h2 {
+    color: #fff;
+}
+.infoLeft {  
+      display: flex;
+      flex-direction: column;
+      gap: 24px 0;
+}
+.infoLeft div {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.infoLeft div p {
+    color: #fff;
+    font-size: calc(1vw + 14px);
+}
+.footerRight {
+    width: 50%;
+}
+.footerForm {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 60px calc(3.3vw + 17.6px);/*60-30*/
+    width: calc(16.4vw + 265.7px);/*475-327*/
+    text-align: center;
+    position: relative;
+}
+.footerForm h3 {
+    font-size: calc(0.4vw + 24.3px);/*30-26*/
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footerForm p {
+    font-size: (0.6vw + 14px);/*21-16*/
+    margin-bottom: 30px;
+}
+.footerForm input {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #A1A1A16B;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+    outline: none;
+}
+.footerForm .primary {
+    margin-bottom: 40px;
+}
+.footerRight span {
+    font-size: 18px;
+    display: block;
+    color: grey;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerForm p:nth-child(5) {
+    font-size: 18px;
+    color: grey;
+}
+.sale {
+    width: calc(6.1vw + 82.2px);/*160-105*/
+    height: calc(6.1vw + 82.2px);/*160-105*/
+    background-color: #6e3aba;
+    border-radius: 50%;
+    font-size: calc(2.5vw + 30.5px);/*63-40*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: -80px;
+    top: -80px;
+}
   
   
 
@@ -439,6 +528,13 @@ h2 {
                              "cup bag";
     }
 }
+@media (max-width: 975px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 88px 0;
+    }
+}
 @media (max-width: 875px) {
     .primary.desc {
         display: none;
@@ -450,6 +546,10 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         
+    }
+    .sale {
+        right: -30px;
+        left: auto;
     }
 }
 @media screen and (max-width: 685px) {

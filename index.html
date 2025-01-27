@@ -308,7 +308,7 @@
         <p>Тогда последний козырь: 
             после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
     </div>
-<div class="splide slider">
+<div class="splide student">
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide"><img src="./img/slide_image1.png" alt="Фото 1"></li>
@@ -321,11 +321,50 @@
   </div>
 </section>
 
+<!--14.Классная работа 13урок-->
+<footer>
+    <div class="footerLeft">
+        <h2>запишись на курс прямо сейчас!</h2>
+        <div class="infoLeft">
+            <div>
+                <img src="./img/keyboard.svg" alt="">
+                <p>html, css, js</p>
+            </div>
+            <div>
+                <img src="./img/icon_game_bot.svg" alt="">
+                <p>Разработка онлайн игр</p>
+            </div>
+            <div>
+                <img src="./img/icon_database.svg" alt="">
+                <p>Введение в Bootstrap и Github</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerRight">
+        <div class="footerForm">
+            <div class="sale">10%</div>
+            <h3>оставь заявку</h3>
+            <p>начало обучения: 1 декабря</p>
+            <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="text" placeholder="+998(__) ____  __  __">
+                <button class="primary">Записаться на курс</button>
+                <span>Остались вопросы?</span>
+                <p>Звони: +998 33 135 33 55
+                    <br>Наши консультанты доступны каждый день 
+                    <br>с 10:00 до 22:00.</p>
+            </form>
+        </div>
+    </div>
+</footer>
+
 <!--13.Домашняя работа-->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var splide = new Splide(".splide.slider", {
-        perPage: 3,
+      var splide = new Splide(".splide.student", {
+        perPage: 2,
         rewind: true,
         arrows: false,
         gap: "40px",
@@ -354,6 +393,7 @@
             },
         },
       });
+      
       splide.mount();
     });
   </script>
