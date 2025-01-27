@@ -508,6 +508,52 @@ h2 {
     left: -80px;
     top: -80px;
 }
+
+/*12.Домашняя работа*/
+.easyCard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cupCard {
+    width: 50%;
+}
+.cupCard h2 {
+    font-weight: 500;
+    font-size: calc(2.7vw + 24.5px);/*58-34*/
+    margin-bottom: calc(5.1vw + 14.9px);/*80-34*/
+}
+.cupCard img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: calc(2.2vw + 11.7px);/*40-20*/
+}
+.cupCard h5 {
+    font-weight: 600;
+    font-size: calc(0.6vw + 19.9px);/*27-22*/
+    margin-bottom: 40px;
+}
+.numberCard {
+    width: 50%;
+}
+.numberCard h4 {
+    font-weight: 700;
+    font-size: calc(2.7vw + 24.5px);/*58-34*/
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.numberCard p {
+    font-weight: 400;
+    font-size: calc(0.6vw + 14px);/*21-16*/
+    margin-bottom: calc(1.1vw + 25.9px);/*40-30*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.numberCard h4:nth-child(1) {
+    margin-top: calc(6.3vw + 16.4px);/*97-40*/
+}
+
   
   
 
@@ -569,5 +615,17 @@ h2 {
     .setimg {
         max-width: 100%;
         height: auto;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cupCard h5 {
+        font-weight: 500;
+    }
+    .cupCard, .numberCard {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .easyCard {
+        flex-direction: column;
     }
 }
